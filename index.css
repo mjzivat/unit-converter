@@ -27,6 +27,10 @@ body {
     font-weight: bold;
 }
 
+::placeholder {
+    color: white;
+}
+
 #convert-btn {
     background: #FFFFFF;
     padding: 10px 20px;
