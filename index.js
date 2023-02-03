@@ -4,11 +4,13 @@
 1 kilogram = 2.204 pound
 */
 
-var input = document.querySelector("input")
+var input = document.querySelector('input')
+input.addEventListener('input', resizeInput)
 
-input.addEventListener("input", function () {
+
+function resizeInput() {
   this.style.width = this.value.length + "ch"
-})
+}
 
 let convertBtn = document.getElementById("convert-btn")
 let lengthEl = document.getElementById("length")
